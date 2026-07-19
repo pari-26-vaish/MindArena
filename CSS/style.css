@@ -1,0 +1,67 @@
+:root {
+  --bg-color: #0d1117;
+  --card-color: #161b22;
+  --text-color: #e6edf3;
+  --muted-color: #9ca3af;
+  --border-color: #263041;
+
+  --primary-color: #60a5fa;
+  --accent-color: #a78bfa;
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --danger-color: #f87171;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, #0f172a, transparent 30%),
+    var(--bg-color);
+  padding: 20px;
+  font-family: "Poppins";
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+a:hover {
+  transform: translateY(-5px);
+}
+
+#theme-btn {
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3 ease-in-out;
+}
+
+#theme-btn:hover {
+  transform: translateY(-5px);
+}
