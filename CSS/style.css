@@ -73,7 +73,11 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 60px 24px;
-  background: radial-gradient(circle at top, rgba(255, 200, 87, 0.06), transparent 60%);
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 200, 87, 0.06),
+    transparent 60%
+  );
 }
 
 .hero-content {
@@ -125,7 +129,9 @@ a:hover {
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .btn:hover {
@@ -163,7 +169,14 @@ a:hover {
 }
 
 @media (max-width: 640px) {
-  .hero-title { font-size: 34px; }
-  .hero-buttons { flex-direction: column; }
-  .hero-stats { gap: 24px; flex-wrap: wrap; }
+  .hero-title {
+    font-size: 34px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .hero-stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
 }
