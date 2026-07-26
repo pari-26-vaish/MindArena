@@ -21,16 +21,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js" defer></script>
+    <script src="JS/app.js" defer></script>
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="logo">
         <img
           src="assets/icons/Logo.png"
           alt="MindArena Logo"
-          height="52px"
+          height="52"
           width=""
         />
       </div>
@@ -93,10 +93,10 @@
       </div>
     </section>
     <section class="categories">
-      <div class="section-title">
-        <h2 class="categories-head">
+      <div class="section-title reveal">
+        <h2 class="categories-head reveal delay-1">
           Choose Your Challenge ! </h2>
-          <p class="categories-sub">Choose your favorite topic and start <span style="color: #ffc857;">challenging yourself</span></p>
+          <p class="categories-sub reveal delay-2">Choose your favorite topic and start <span style="color: #ffc857;">challenging yourself</span></p>
       </div>
       <div class="category-grid">
        <div class="category-card category-card-p">
@@ -226,5 +226,161 @@
 </div>
 </div>
     </section>
+<section class="feature">
+
+    <div class="feature-title reveal">
+        <h2 class="feature-head reveal delay-1">
+            Why Choose <span class="highlight">MindArena?</span>
+        </h2>
+
+        <p class="feature-sub reveal delay-2">
+            Sharpen your skills with features designed to make learning fun and competitive.
+        </p>
+    </div>
+
+    <div class="feature-row">
+
+        <div class="feature-content">
+
+            <span class="feature-badge">
+                ⚡ Timed Challenges
+            </span>
+
+            <h3>
+                Challenge Yourself <br>
+                Against Time.
+            </h3>
+
+            <p>
+                Race against the clock with exciting quizzes.
+                Improve your speed, accuracy, and confidence
+                every time you play.
+            </p>
+
+            <a href="#" class="feature-btn">
+                Start Playing
+                <span class="arrow">→</span>
+            </a>
+
+        </div>
+
+        <div class="feature-demo reveal">
+
+            <div class="demo-card timer-card">
+
+                <div class="timer-icon">
+                    ⏱
+                </div>
+
+                <h3>05:00</h3>
+
+                <div class="progress">
+                    <div class="progress-fill active"></div>
+                </div>
+
+                <p>Question 8 of 15</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature-row reverse">
+
+        <div class="feature-demo reveal">
+
+            <div class="demo-card analytics-card">
+
+                <h4>Accuracy</h4>
+
+                <h2>92%</h2>
+
+                <div class="progress">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <p>Best Score: 97% <br>
+                  Current Streak: 14 🔥<br> Quizzes: 182
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="feature-content">
+
+            <span class="feature-badge">
+                📈 Track Progress
+            </span>
+
+            <h3>
+                See Every <br>
+                Improvement.
+            </h3>
+
+            <p>
+                Monitor your quiz history, accuracy,
+                streaks, and performance to identify
+                your strengths and improve over time.
+            </p>
+
+            <a href="#" class="feature-btn">
+                View Dashboard
+                <span class="arrow">→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="feature-row">
+
+        <div class="feature-content">
+
+            <span class="feature-badge">
+                🏆 Global Leaderboard
+            </span>
+
+            <h3>
+                Compete With <br>
+                The Best.
+            </h3>
+
+            <p>
+                Climb the rankings, challenge friends,
+                and prove you're the smartest player
+                in the MindArena community.
+            </p>
+
+            <a href="#" class="feature-btn">
+                View Rankings
+                <span class="arrow">→</span>
+            </a>
+
+        </div>
+
+        <div class="feature-demo reveal">
+
+            <div class="demo-card leaderboard-card">
+
+                <h4>Weekly Leaderboard</h4>
+
+                <ul class="leaderboard-preview">
+
+                    <li>🥇 Hemant <span>1850 XP</span></li>
+                    <li>🥈 Pari <span>1760 XP</span></li>
+                    <li>🥉 Alex <span>1705 XP</span></li>
+
+                </ul><br>
+                <p>+182 Players!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
   </body>
 </html>
