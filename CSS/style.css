@@ -498,7 +498,7 @@ a:hover {
 .reverse .feature-demo {
   justify-content: flex-start;
   padding-left: 0;
-  padding-right: 290px;
+  padding-right: 230px;
 }
 
 .feature-demo::before {

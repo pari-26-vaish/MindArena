@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindArena</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/categories.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../JS/app.js" defer></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          src="../assets/icons/Logo.png"
+          alt="MindArena Logo"
+          height="52"
+          width=""
+        />
+      </div>
+      <ul>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="#home">Home</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="#categories">Categories</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="#leaderboard">Leaderboard</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="#dashboard">Dashboard</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="#profile">Profile</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <button id="theme-btn">🌙</button>
+        </li>
+      </ul>
+    </nav>
+    <section class="header">
+      <h1 class="header-title reveal">Explore Categories</h1>
+      <p class="header-subtitle reveal">
+        Choose your favorite category and begin your journey.
+      </p>
+    </section>
+
+    <!-- select categories section -->
+    <section class="categories">
+      <p class="guidetxt">Click on your preferred category to select :</p>
+      <div class="category-selector">
+        <button class="categorybtn active">💻 Programming</button>
+        <button class="categorybtn">🧪 Science</button>
+        <button class="categorybtn">🌍 Geography</button>
+        <button class="categorybtn">📜 History</button>
+        <button class="categorybtn">⚽ Sports</button>
+        <button class="categorybtn">🎬 Movies</button>
+      </div>
+    </section>
+
+    <!-- QUIZ CONFIGURATION -->
+    <section class="quiz-config">
+      <div class="quizconfig-panel">
+        <!-- LEFT -->
+        <div class="config-left">
+          <!-- Selected Category -->
+          <div class="setting">
+            <h2>Selected Category</h2>
+
+            <div class="selected-category" id="selected-category">
+              💻 <span>Programming</span>
+            </div>
+          </div>
+
+          <!-- Difficulty -->
+          <div class="setting">
+            <h4>Difficulty</h4>
+
+            <div class="difficulty-btns">
+              <input
+                type="radio"
+                id="easy"
+                name="difficulty"
+                value="easy"
+                checked
+              />
+              <label for="easy">Easy</label>
+
+              <input
+                type="radio"
+                id="medium"
+                name="difficulty"
+                value="medium"
+              />
+              <label for="medium">Medium</label>
+
+              <input type="radio" id="hard" name="difficulty" value="hard" />
+              <label for="hard">Hard</label>
+            </div>
+          </div>
+
+          <!-- Time -->
+          <div class="setting">
+            <h4>Time Limit</h4>
+
+            <div class="time-selector">
+              <button type="button" id="minus">−</button>
+
+              <div class="time-display">
+                <span id="time-value">30</span>
+                <span class="unit">sec</span>
+              </div>
+
+              <button type="button" id="plus">+</button>
+            </div>
+          </div>
+
+          <!-- Questions -->
+          <div class="setting">
+            <h4>Number of Questions</h4>
+
+            <div class="question-btns">
+              <input type="radio" id="q10" name="questions" checked />
+              <label for="q10">10</label>
+
+              <input type="radio" id="q15" name="questions" />
+              <label for="q15">15</label>
+
+              <input type="radio" id="q20" name="questions" />
+              <label for="q20">20</label>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <a href="../pages/quiz.html" class="start-btn">
+            Start Quiz
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="config-right">
+          <div class="preview-card">
+            <div class="preview-header">
+              <h3>📋 Quiz Summary</h3>
+              <p>Your current settings</p>
+            </div>
+
+            <div class="preview-item">
+              <span>📚 Category</span>
+              <strong id="preview-category">Programming</strong>
+            </div>
+
+            <div class="preview-item">
+              <span>⚡ Difficulty</span>
+              <strong id="preview-difficulty">Easy</strong>
+            </div>
+
+            <div class="preview-item">
+              <span>⏱ Time</span>
+              <strong id="preview-time">30 sec</strong>
+            </div>
+
+            <div class="preview-item">
+              <span>❓ Questions</span>
+              <strong id="preview-questions">10</strong>
+            </div>
+
+            <div class="preview-divider"></div>
+
+            <div class="xp-box">
+              <p>Estimated Reward</p>
+              <h2>+120 XP</h2>
+              <small>🏆 Earn rewards as you play</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
