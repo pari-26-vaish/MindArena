@@ -1,89 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leaderboard - MindArena</title>
+    <title>MindArena</title>
     <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/leaderboard.css" />
 
-    <!-- Google Fonts -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite..." rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900" rel="stylesheet" />
-
-    <script src="../JS/app.js" defer></script>
-</head>
-<body>
-<nav id="navbar">
-    <div class="logo">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../JS/leaderboard.js" defer></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
         <img
-                src="../assets/icons/Logo.png"
-                alt="MindArena Logo"
-                height="52"
-                width=""
+          src="../assets/icons/Logo.png"
+          alt="MindArena Logo"
+          height="52"
+          width=""
         />
-    </div>
-    <ul>
-        <li style="...">
-            <a href="../index.html#home">Home</a>
+      </div>
+      <ul>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../index.html">Home</a>
         </li>
-        <li style="...">
-            <a href="../index.html#categories">Categories</a>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/categories.html">Categories</a>
         </li>
-        <li style="font-size: 25px; font-weight: bold; align-items: center">
-            <a href="leaderboard.html">Leaderboard</a>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/leaderboard.html"> Leaderboard</a>
         </li>
-        <li style="...">
-            <a href="../index.html#dashboard">Dashboard</a>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/dashboard.html">Dashboard</a>
         </li>
-        <li style="...">
-            <a href="../index.html#profile">Profile</a>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/profile.html">Profile</a>
         </li>
-        <li style="...">
-            <button id="theme-btn">🌙</button>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <button id="theme-btn">🌙</button>
         </li>
-    </ul>
-</nav>
-
-<main class="leaderboard-page">
-    <div class="lb-header">
+      </ul>
+    </nav>
+    <!-- Leaderboard page content goes here. -->
+    <main class="leaderboard-page">
+      <div class="lb-header">
         <span class="badge">🏆 Top Minds</span>
         <h1>Leaderboard</h1>
         <p>See who's conquering the arena. Play more quizzes to climb up.</p>
-    </div>
+      </div>
 
-    <div class="lb-controls">
+      <div class="lb-controls">
         <select id="categoryFilter">
-            <option value="all">All Categories</option>
-            <option value="all">Programming</option>
-            <option value="all">Science</option>
-            <option value="all">Geography</option>
-            <option value="all">History</option>
-            <option value="all">Sports</option>
-            <option value="all">Movies</option>
+          <option value="all">All Categories</option>
+          <option value="all">Programming</option>
+          <option value="all">Science</option>
+          <option value="all">Geography</option>
+          <option value="all">History</option>
+          <option value="all">Sports</option>
+          <option value="all">Movies</option>
         </select>
         <button id="clearScores" class="btn-outline">Clear My Scores</button>
-    </div>
+      </div>
 
-    <div id="podium" class="podium"></div>
+      <div id="podium" class="podium"></div>
 
-    <table class="lb-table">
+      <table class="lb-table">
         <thead>
-        <tr><th>Rank</th><th>Player</th><th>Category</th><th>Score</th><th>Date</th></tr>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Category</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
         </thead>
         <tbody id="lbTableBody"></tbody>
-    </table>
+      </table>
 
-    <p id="emptyState" class="empty-state" style="display:none;">
+      <p id="emptyState" class="empty-state" style="display: none">
         No scores yet. Play a quiz to appear on the leaderboard!
-    </p>
-</main>
+      </p>
+    </main>
 
-<script src="../js/leaderboard.js"></script>
-</body>
+    <script src="../js/leaderboard.js"></script>
+  </body>
 </html>

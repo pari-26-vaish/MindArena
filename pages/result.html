@@ -37,19 +37,19 @@
       </div>
       <ul>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
-          <a href="#home">Home</a>
+          <a href="../index.html">Home</a>
         </li>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
-          <a href="#categories">Categories</a>
+          <a href="../pages/categories.html">Categories</a>
         </li>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
-          <a href="#leaderboard">Leaderboard</a>
+          <a href="../pages/leaderboard.html"> Leaderboard</a>
         </li>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
-          <a href="#dashboard">Dashboard</a>
+          <a href="../pages/dashboard.html">Dashboard</a>
         </li>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
-          <a href="#profile">Profile</a>
+          <a href="../pages/profile.html">Profile</a>
         </li>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
           <button id="theme-btn">🌙</button>
@@ -58,29 +58,35 @@
     </nav>
 
     <!-- Result panel -->
-    <section class="result-header">
-      <div class="result-panel">
-        <div class="result-top">
-          <h1>🎉Quiz completed!</h1>
-          <p id="result-msg"></p>
+    <section class="result-section">
+      <div class="result-card">
+        <div class="result-header">
+          <h1>🎉 Quiz Completed!</h1>
+          <p id="result-msg">Great Job!</p>
         </div>
-        <div id="stats">
-          <div class="stat-box">
-            <h3>Score</h3>
-            <p id="score"></p>
+
+        <div class="score-circle">
+          <h2 id="score">8 / 10</h2>
+          <span>Final Score</span>
+        </div>
+        <div class="divider"></div>
+        <div class="stats">
+          <div class="stat">
+            <span>📈 Accuracy</span>
+            <strong id="accuracy">80%</strong>
           </div>
-          <div class="stat-box">
-            <h3>Accuracy</h3>
-            <p id="accuracy"></p>
-          </div>
-          <div class="stat-box">
-            <h3>XP Earned</h3>
-            <p id="xp"></p>
+
+          <div class="stat">
+            <span>⚡ XP Earned</span>
+            <strong id="xp">+160</strong>
           </div>
         </div>
-        <div class="result-bottom">
-          <button id="retry-btn">Retry</button>
-          <button id="home-btn">Home</button>
+
+        <div class="result-buttons">
+          <a href="categories.html" class="primary-btn"> 🔄 Play Again </a>
+
+          <a href="../index.html" class="secondary-btn"> 🏠 Home </a>
+        </div>
       </div>
     </section>
   </body>

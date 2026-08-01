@@ -43,10 +43,14 @@ const message = document.getElementById("result-msg");
 
 if (accuracy >= 90) {
   message.textContent = "🏆 Outstanding! You're a Quiz Master.";
+  document.querySelector(".score-circle h2").style.color = "#22c55e";
 } else if (accuracy >= 70) {
   message.textContent = "🔥 Great job! Keep it up.";
+  document.querySelector(".score-circle h2").style.color = "#3b82f6";
 } else if (accuracy >= 50) {
   message.textContent = "👍 Nice attempt! Practice makes perfect.";
+  document.querySelector(".score-circle h2").style.color = "#ffc857";
 } else {
   message.textContent = "💪 Don't give up. Try again!";
+  document.querySelector(".score-circle h2").style.color = "#ffc857";
 }
