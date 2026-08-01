@@ -1,0 +1,97 @@
+
+.leaderboard-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  color: #f4f1ea;
+}
+
+.lb-header { text-align: center; margin-bottom: 40px; }
+
+.lb-header .badge {
+  display: inline-block;
+  background: #2a2f26;
+  color: #e6b450;
+  border: 1px solid #4a4436;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  box-shadow:0px 0px 8px yellow;
+}
+
+.lb-header h1 { font-size: 2.4rem; margin: 8px 0; }
+.lb-header p { color: #9aa39a; }
+
+.lb-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.lb-controls select {
+  background: #1b1f19;
+  color: #f4f1ea;
+  border: 1px solid #3a3f34;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #e6b450;
+  color: #e6b450;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.btn-outline:hover { background: #e6b450; color: #1b1f19; }
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.podium-item {
+  background: #1e2319;
+  border: 1px solid #3a3f34;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  padding: 16px 20px;
+  min-width: 120px;
+}
+
+.podium-item.gold { height: 160px; border-color: #e6b450; order: 2; }
+.podium-item.silver { height: 130px; order: 1; }
+.podium-item.bronze { height: 110px; order: 3; }
+
+.podium-item .rank-medal { font-size: 1.8rem; }
+.podium-item .p-name { font-weight: 600; margin: 6px 0; }
+.podium-item .p-score { color: #e6b450; font-weight: 700; }
+
+.lb-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1b1f19;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.lb-table th, .lb-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #2a2f26;
+}
+
+.lb-table th { color: #9aa39a; font-size: 0.85rem; text-transform: uppercase; }
+.lb-table tr:hover { background: #23281f; }
+.lb-table tr.top-row td { color: #e6b450; font-weight: 600; }
+
+.empty-state {
+  text-align: center;
+  color: #9aa39a;
+  padding: 40px;
+}
