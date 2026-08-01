@@ -68,9 +68,6 @@ function showQuestion() {
     currentQuestionIndex + 1;
   showAnswers(currentQuestion);
   startTimer();
-  const nextBtn = document.getElementById("next-btn");
-
-  nextBtn.addEventListener("click", nextQuestion);
 }
 
 // Show Answers Function
@@ -101,9 +98,6 @@ function showAnswers(currentQuestion) {
 
     answersDiv.appendChild(button);
   });
-  const nextBtn = document.getElementById("next-btn");
-
-  nextBtn.addEventListener("click", nextQuestion);
 }
 
 // Select Answer Function
@@ -131,7 +125,7 @@ function selectAnswer(button, answer, currentQuestion) {
   clearInterval(timer);
   const nextBtn = document.getElementById("next-btn");
 
-  nextBtn.addEventListener("click", nextQuestion);
+  nextBtn.style.display = "block";
 }
 
 // Next Question Function
@@ -161,7 +155,7 @@ function nextQuestion() {
   }, 350);
 }
 
-nextQuestion();
+// nextQuestion();
 function revealCorrectAnswer() {
   const buttons = document.querySelectorAll(".answer-btn");
 
