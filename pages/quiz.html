@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindArena</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/quiz.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../JS/quiz.js" defer></script>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img
+          src="../assets/icons/Logo.png"
+          alt="MindArena Logo"
+          height="52"
+          width=""
+        />
+      </div>
+      <ul>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../index.html">Home</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/categories.html">Categories</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/leaderboard.html">Leaderboard</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/dashboard.html">Dashboard</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <a href="../pages/profile.html">Profile</a>
+        </li>
+        <li style="font-size: 20px; font-weight: bold; align-items: center">
+          <button id="theme-btn">🌙</button>
+        </li>
+      </ul>
+    </nav>
+    <section class="quiz-header">
+      <div class="quiz-panel">
+        <div class="quiz-top">
+          <h2>Question <span id="question-number">1</span></h2>
+          <span class="timer">⏱<span id="quiz-timer">--</span></span>
+        </div>
+        <div id="quiz-content">
+          <div class="question">
+            <p id="question-text">Loading...</p>
+          </div>
+          <div class="answers" id="answers"></div>
+        </div>
+        <button id="next-btn">Next →</button>
+      </div>
+    </section>
+  </body>
+</html>

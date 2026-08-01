@@ -1,0 +1,248 @@
+:root {
+  --bg-color: #0d1117;
+  --card-color: #161b22;
+  --text-color: #e6edf3;
+  --muted-color: #9ca3af;
+  --border-color: #263041;
+
+  --primary-color: #60a5fa;
+  --accent-color: #a78bfa;
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --danger-color: #f87171;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, #0f172a, transparent 30%),
+    var(--bg-color);
+  padding: 20px;
+  font-family: "Poppins";
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  /* transition:
+    background 0.3s ease-in-out,
+    backdrop-filter 0.3s ease-in-out;
+  /* position: sticky; */
+  /* top: 20px;
+  z-index: 1000; */
+}
+
+/* nav.scrolled {
+  top: 12px;
+  background: rgba(10, 15, 25, 0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+} */
+ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+a:hover {
+  transform: translateY(-5px);
+}
+
+#theme-btn {
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3 ease-in-out;
+}
+
+#theme-btn:hover {
+  transform: rotate(25deg) scale(1.15);
+}
+
+/* ~~~~~~~~QUIZ PANEL~~~~~~~~ */
+
+.quiz-panel {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #151a26;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+}
+
+.quiz-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.quiz-panel h2 {
+  color: white;
+  margin: 0;
+}
+#quiz-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+#quiz-content.fade-out {
+  opacity: 0;
+
+  transform: translateY(25px);
+
+  filter: blur(4px);
+}
+
+#quiz-content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timer {
+  color: #ffc857;
+  font-size: 18px;
+  font-weight: 600;
+}
+#quiz-timer {
+  color: #ffc857;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.question p {
+  color: white;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.answers {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin-top: 35px;
+}
+.answer-btn {
+  padding: 18px;
+
+  font-size: 18px;
+
+  font-family: "Poppins";
+
+  background: #1d2334;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 12px;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: answerFade 0.4s ease forwards;
+}
+@keyframes answerFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.answer-btn:hover {
+  border-color: #ffc857;
+
+  transform: translateX(10px);
+
+  box-shadow: 0 10px 30px rgba(255, 200, 87, 0.15);
+}
+.correct {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: white;
+  /* animation: pulse 0.5s ease; */
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wrong {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: white;
+}
+#next-btn {
+  display: none;
+
+  margin-top: 30px;
+
+  padding: 14px 28px;
+
+  background: #ffc857;
+
+  color: #111827;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#next-btn:hover {
+  transform: translateY(-2px);
+}
+.warning {
+  color: #f59e0b;
+}
+
+.danger {
+  color: #ef4444;
+
+  animation: pulse 0.8s infinite;
+}
