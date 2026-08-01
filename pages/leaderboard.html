@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard - MindArena</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/leaderboard.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playwrite..." rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900" rel="stylesheet" />
+
+    <script src="../JS/app.js" defer></script>
+</head>
+<body>
+<nav id="navbar">
+    <div class="logo">
+        <img
+                src="../assets/icons/Logo.png"
+                alt="MindArena Logo"
+                height="52"
+                width=""
+        />
+    </div>
+    <ul>
+        <li style="...">
+            <a href="../index.html#home">Home</a>
+        </li>
+        <li style="...">
+            <a href="../index.html#categories">Categories</a>
+        </li>
+        <li style="font-size: 25px; font-weight: bold; align-items: center">
+            <a href="leaderboard.html">Leaderboard</a>
+        </li>
+        <li style="...">
+            <a href="../index.html#dashboard">Dashboard</a>
+        </li>
+        <li style="...">
+            <a href="../index.html#profile">Profile</a>
+        </li>
+        <li style="...">
+            <button id="theme-btn">🌙</button>
+        </li>
+    </ul>
+</nav>
+
+<main class="leaderboard-page">
+    <div class="lb-header">
+        <span class="badge">🏆 Top Minds</span>
+        <h1>Leaderboard</h1>
+        <p>See who's conquering the arena. Play more quizzes to climb up.</p>
+    </div>
+
+    <div class="lb-controls">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="all">Programming</option>
+            <option value="all">Science</option>
+            <option value="all">Geography</option>
+            <option value="all">History</option>
+            <option value="all">Sports</option>
+            <option value="all">Movies</option>
+        </select>
+        <button id="clearScores" class="btn-outline">Clear My Scores</button>
+    </div>
+
+    <div id="podium" class="podium"></div>
+
+    <table class="lb-table">
+        <thead>
+        <tr><th>Rank</th><th>Player</th><th>Category</th><th>Score</th><th>Date</th></tr>
+        </thead>
+        <tbody id="lbTableBody"></tbody>
+    </table>
+
+    <p id="emptyState" class="empty-state" style="display:none;">
+        No scores yet. Play a quiz to appear on the leaderboard!
+    </p>
+</main>
+
+<script src="../js/leaderboard.js"></script>
+</body>
+</html>

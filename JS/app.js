@@ -18,8 +18,10 @@ reveals.forEach((el) => observer.observe(el));
 let categ = document.querySelector(".categories");
 let btnsecondary = document.getElementById("btn-secondary");
 
-btnsecondary.addEventListener("click", function(){
-    categ.scrollIntoView({
-    behavior: "smooth"
-});
-})
+if (btnsecondary && categ) {
+    btnsecondary.addEventListener("click", function(){
+        categ.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+}
