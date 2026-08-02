@@ -1,4 +1,6 @@
-// Navbar
+// ==============================
+// Reveal Animation
+// ==============================
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -17,27 +19,95 @@ const observer = new IntersectionObserver(
 
 reveals.forEach((el) => observer.observe(el));
 
-//Result page code
-let gamesPlayed = Number(localStorage.getItem("gamesPlayed")) || 0;
+// ==============================
+// Redirect if opened directly
+// ==============================
 
-gamesPlayed++;
-
-localStorage.setItem("gamesPlayed", gamesPlayed);
 if (!localStorage.getItem("quizScore")) {
   window.location.href = "../index.html";
 }
 
+// ==============================
+// Fetch Quiz Data
+// ==============================
+
 const score = Number(localStorage.getItem("quizScore"));
 const total = Number(localStorage.getItem("totalQuestions"));
 
+const settings = JSON.parse(localStorage.getItem("quizSettings"));
+
 const accuracy = Math.round((score / total) * 100);
-const xp = score * 20;
-localStorage.setItem("xp", xp);
+const earnedXP = score * 20;
+
+// ==============================
+// Games Played
+// ==============================
+
+let gamesPlayed = Number(localStorage.getItem("gamesPlayed")) || 0;
+gamesPlayed++;
+
+localStorage.setItem("gamesPlayed", gamesPlayed);
+
+// ==============================
+// Total XP
+// ==============================
+
+let totalXP = Number(localStorage.getItem("totalXP")) || 0;
+totalXP += earnedXP;
+
+localStorage.setItem("totalXP", totalXP);
+
+// ==============================
+// Current Level
+// ==============================
+
+const currentLevel = Math.floor(totalXP / 500) + 1;
+
+localStorage.setItem("currentLevel", currentLevel);
+
+// ==============================
+// Best Score
+// ==============================
+
+let bestScore = localStorage.getItem("bestScore") || "0/0";
+
+const bestScoreValue = Number(bestScore.split("/")[0]);
+
+if (score > bestScoreValue) {
+  bestScore = `${score}/${total}`;
+  localStorage.setItem("bestScore", bestScore);
+}
+
+// ==============================
+// Accuracy
+// ==============================
+
+localStorage.setItem("accuracy", accuracy);
+
+// ==============================
+// Recent Quiz
+// ==============================
+
+localStorage.setItem("lastCategory", settings.category);
+localStorage.setItem("lastDifficulty", settings.difficulty);
+localStorage.setItem("lastQuestions", settings.questions);
+localStorage.setItem("lastScore", `${score}/${total}`);
+
+// ==============================
+// Username (Temporary)
+// ==============================
+
+if (!localStorage.getItem("username")) {
+  localStorage.setItem("username", "Player");
+}
+
+// ==============================
+// Result Page UI
+// ==============================
+
 document.getElementById("score").textContent = `${score} / ${total}`;
-
 document.getElementById("accuracy").textContent = `${accuracy}%`;
-
-document.getElementById("xp").textContent = `+${xp}`;
+document.getElementById("xp").textContent = `+${earnedXP}`;
 
 const message = document.getElementById("result-msg");
 
