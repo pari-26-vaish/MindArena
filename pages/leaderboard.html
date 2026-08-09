@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/leaderboard.css" />
+    <link rel="stylesheet" href="../CSS/theme.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="../JS/app.js" defer></script>
     <script src="../JS/leaderboard.js" defer></script>
   </head>
   <body>
@@ -48,7 +50,7 @@
           <a href="../pages/dashboard.html">Dashboard</a>
         </li>
         <li style="font-size: 20px; font-weight: bold; align-items: center">
-          <button id="theme-btn">🌙</button>
+          <button id="theme-btn">☀️</button>
         </li>
       </ul>
     </nav>
@@ -63,12 +65,12 @@
       <div class="lb-controls">
         <select id="categoryFilter">
           <option value="all">All Categories</option>
-          <option value="all">Programming</option>
-          <option value="all">Science</option>
-          <option value="all">Geography</option>
-          <option value="all">History</option>
-          <option value="all">Sports</option>
-          <option value="all">Movies</option>
+          <option value="Programming">Programming</option>
+          <option value="Science">Science</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+          <option value="Sports">Sports</option>
+          <option value="Movies">Movies</option>
         </select>
         <button id="clearScores" class="btn-outline">Clear My Scores</button>
       </div>
@@ -92,7 +94,5 @@
         No scores yet. Play a quiz to appear on the leaderboard!
       </p>
     </main>
-
-    <script src="../js/leaderboard.js"></script>
   </body>
 </html>

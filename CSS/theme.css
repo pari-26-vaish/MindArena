@@ -1,0 +1,712 @@
+/* =========================================
+   MINDARENA — LIGHT THEME
+========================================= */
+
+body.light-theme {
+  background: #eef1f7;
+  color: #172033;
+}
+
+/* =========================================
+   GLOBAL TEXT
+========================================= */
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme p,
+body.light-theme span,
+body.light-theme label {
+  color: #172033;
+}
+
+body.light-theme .muted,
+body.light-theme small {
+  color: #64748b;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+body.light-theme nav,
+body.light-theme .navbar {
+  background: #f8f9fc;
+  border-color: #d7dce7;
+  box-shadow: 0 4px 15px rgba(30, 41, 59, 0.06);
+}
+
+body.light-theme nav a,
+body.light-theme .navbar a {
+  color: #172033;
+}
+
+body.light-theme nav a:hover,
+body.light-theme .navbar a:hover {
+  color: #d99d16;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+body.light-theme .hero {
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(255, 200, 87, 0.12),
+    transparent 40%
+  );
+}
+
+body.light-theme .hero-title {
+  color: #172033;
+}
+
+body.light-theme .hero-title span {
+  color: #f2b632;
+}
+
+body.light-theme .hero-subtitle {
+  color: #64748b;
+}
+
+body.light-theme .hero-badge {
+  background: #fff8e7;
+  color: #c58b12;
+  border-color: #f2d48a;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+body.light-theme .btn-primary,
+body.light-theme .primary-btn {
+  background: #ffc857;
+  color: #172033;
+  border-color: #ffc857;
+}
+
+body.light-theme .btn-primary:hover,
+body.light-theme .primary-btn:hover {
+  background: #f4b83f;
+}
+
+body.light-theme .btn-secondary,
+body.light-theme .secondary-btn {
+  background: #ffffff;
+  color: #172033;
+  border-color: #cbd3e1;
+}
+
+body.light-theme .btn-secondary:hover,
+body.light-theme .secondary-btn:hover {
+  background: #e9edf4;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+body.light-theme .card,
+body.light-theme .category-card,
+body.light-theme .preview-card,
+body.light-theme .demo-card,
+body.light-theme .recent-quiz,
+body.light-theme .achievement-card {
+  background: #ffffff;
+  border-color: #d7dce7;
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.06);
+}
+
+body.light-theme .card:hover,
+body.light-theme .category-card:hover {
+  box-shadow: 0 12px 25px rgba(30, 41, 59, 0.1);
+}
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+body.light-theme .profile,
+body.light-theme .stats-panel,
+body.light-theme .achievements {
+  background: #f8f9fc;
+  border-color: #d7dce7;
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.06);
+}
+
+body.light-theme .stats-panel .card {
+  background: #ffffff;
+}
+
+body.light-theme .stats-panel hr {
+  border-color: #d7dce7;
+}
+
+body.light-theme .recent-quiz {
+  background: #ffffff;
+}
+
+body.light-theme .progress-bar {
+  background: #dfe4ed;
+}
+
+body.light-theme #progress-fill {
+  background: linear-gradient(90deg, #ffc857, #8b5cf6);
+}
+
+/* =========================================
+   CATEGORIES
+========================================= */
+
+body.light-theme .category-selector,
+body.light-theme .quiz-config {
+  background: #f8f9fc;
+  border-color: #d7dce7;
+}
+
+body.light-theme .categorybtn {
+  background: #ffffff;
+  color: #172033;
+  border-color: #d7dce7;
+}
+
+body.light-theme .categorybtn:hover {
+  background: #eef1f7;
+  border-color: #ffc857;
+}
+
+body.light-theme .categorybtn.active {
+  background: #fff4d6;
+  color: #9a6a00;
+  border-color: #ffc857;
+}
+
+body.light-theme .preview-item {
+  background: #ffffff;
+  border-color: #d7dce7;
+}
+
+body.light-theme .preview-item strong {
+  color: #172033;
+}
+
+body.light-theme .preview-item span {
+  color: #64748b;
+}
+
+/* =========================================
+   QUIZ
+========================================= */
+
+body.light-theme .quiz-panel,
+body.light-theme #quiz-content {
+  background: #f8f9fc;
+  border-color: #d7dce7;
+}
+
+body.light-theme .question-text,
+body.light-theme #question-text {
+  color: #172033;
+}
+
+body.light-theme .answer-btn {
+  background: #ffffff;
+  color: #172033;
+  border-color: #cbd3e1;
+}
+
+body.light-theme .answer-btn:hover {
+  background: #f1f4f9;
+  border-color: #ffc857;
+}
+
+body.light-theme .answer-btn.correct {
+  background: #dcfce7;
+  color: #166534;
+  border-color: #22c55e;
+}
+
+body.light-theme .answer-btn.wrong {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #ef4444;
+}
+
+/* =========================================
+   RESULT PAGE
+========================================= */
+
+body.light-theme .result-card {
+  background: #f8f9fc;
+  border-color: #d7dce7;
+  box-shadow: 0 10px 30px rgba(30, 41, 59, 0.08);
+}
+
+body.light-theme .result-header h1,
+body.light-theme .result-header p {
+  color: #172033;
+}
+
+body.light-theme .score-circle {
+  background: #ffffff;
+  border-color: #ffc857;
+}
+
+body.light-theme .score-circle span {
+  color: #64748b;
+}
+
+body.light-theme .stat {
+  background: #ffffff;
+  border-color: #d7dce7;
+}
+
+body.light-theme .stat span {
+  color: #64748b;
+}
+
+body.light-theme .stat strong {
+  color: #172033;
+}
+
+/* =========================================
+   LEADERBOARD
+========================================= */
+
+body.light-theme .leaderboard-page {
+  color: #172033;
+}
+
+body.light-theme .lb-header h1 {
+  color: #172033;
+}
+
+body.light-theme .lb-header p {
+  color: #64748b;
+}
+
+body.light-theme .lb-controls select {
+  background: #ffffff;
+  color: #172033;
+  border-color: #cbd3e1;
+}
+
+body.light-theme .lb-table {
+  background: #ffffff;
+  border-color: #d7dce7;
+}
+
+body.light-theme .lb-table th {
+  background: #eef1f7;
+  color: #475569;
+}
+
+body.light-theme .lb-table td {
+  color: #172033;
+  border-color: #e2e6ee;
+}
+
+body.light-theme .lb-table tr:hover {
+  background: #f8f9fc;
+}
+
+body.light-theme .podium-item {
+  background: #ffffff;
+  border-color: #d7dce7;
+}
+
+body.light-theme .empty-state {
+  color: #64748b;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+body.light-theme .cta-section {
+  background: linear-gradient(135deg, #ffffff, #fff8e8);
+  border-color: #e3e7ef;
+}
+
+body.light-theme .cta-content h2 {
+  color: #172033;
+}
+
+body.light-theme .cta-content p {
+  color: #64748b;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+body.light-theme .site-footer {
+  background: #e8ecf3;
+  border-color: #d7dce7;
+}
+
+body.light-theme .footer-col h4 {
+  color: #172033;
+}
+
+body.light-theme .footer-col a {
+  color: #64748b;
+}
+
+body.light-theme .footer-col a:hover {
+  color: #c58b12;
+}
+
+/* =========================================
+   THEME BUTTON
+========================================= */
+
+body.light-theme #theme-btn {
+  background: transparent;
+  color: #172033;
+}
+
+/* =========================================
+   HOMEPAGE - LIGHT MODE FIX
+========================================= */
+
+/* Hero */
+
+body.light-theme .hero-title {
+  color: #172033;
+}
+
+body.light-theme .hero-title .highlight {
+  color: #e5a91a;
+}
+
+body.light-theme .hero-subtitle {
+  color: #64748b;
+}
+
+body.light-theme .hero-badge {
+  background: #fff7df;
+  color: #b77900;
+  border-color: #f2d48a;
+}
+
+body.light-theme .hero-stats .stat h3 {
+  color: #e5a91a;
+}
+
+body.light-theme .hero-stats .stat p {
+  color: #64748b;
+}
+
+/* Categories section */
+
+body.light-theme .categories {
+  color: #172033;
+}
+
+body.light-theme .categories-head {
+  color: #172033;
+}
+
+body.light-theme .categories-sub {
+  color: #64748b;
+}
+
+/* Category cards */
+
+body.light-theme .category-card-p,
+body.light-theme .category-card-s,
+body.light-theme .category-card-g,
+body.light-theme .category-card-h,
+body.light-theme .category-card-sp,
+body.light-theme .category-card-m {
+  background: #ffffff;
+  border: 1px solid #d7dce7;
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.06);
+}
+
+/* Category card text */
+
+body.light-theme .category-card h3 {
+  color: #172033;
+}
+
+body.light-theme .category-card p {
+  color: #475569;
+}
+
+body.light-theme .category-card span {
+  color: #64748b;
+}
+
+body.light-theme .category-card a {
+  color: #172033;
+}
+
+/* Category hover */
+
+body.light-theme .category-card-p:hover {
+  border-color: #3b82f6;
+}
+
+body.light-theme .category-card-s:hover {
+  border-color: #22c55e;
+}
+
+body.light-theme .category-card-g:hover {
+  border-color: #06b6d4;
+}
+
+body.light-theme .category-card-h:hover {
+  border-color: #f59e0b;
+}
+
+body.light-theme .category-card-sp:hover {
+  border-color: #ef4444;
+}
+
+body.light-theme .category-card-m:hover {
+  border-color: #a855f7;
+}
+
+/* =========================================
+   FEATURES SECTION
+========================================= */
+
+body.light-theme .feature {
+  color: #172033;
+}
+
+body.light-theme .feature-head {
+  color: #172033;
+}
+
+body.light-theme .feature-sub {
+  color: #64748b;
+}
+
+body.light-theme .feature-content h3 {
+  color: #172033;
+}
+
+body.light-theme .feature-content p {
+  color: #64748b;
+}
+
+body.light-theme .feature-btn {
+  color: #c58b12;
+}
+
+/* Demo cards */
+
+body.light-theme .demo-card {
+  background: #ffffff;
+  border-color: #d7dce7;
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.06);
+}
+
+body.light-theme .demo-card h2,
+body.light-theme .demo-card h3,
+body.light-theme .demo-card h4 {
+  color: #172033;
+}
+
+body.light-theme .demo-card p {
+  color: #64748b;
+}
+
+body.light-theme .progress {
+  background: #e1e5ec;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+body.light-theme .cta-section {
+  background: linear-gradient(120deg, #ffffff, #fff7df, #ffffff);
+
+  border-color: #d7dce7;
+}
+
+body.light-theme .cta-content h2 {
+  color: #172033;
+  text-shadow: none;
+}
+
+body.light-theme .cta-content p {
+  color: #64748b;
+}
+
+/* =========================================
+   FOOTER - LIGHT MODE FIX
+========================================= */
+
+body.light-theme .site-footer {
+  background: #e8ecf3;
+  border-color: #d7dce7;
+}
+
+/* Left brand card */
+body.light-theme .footer-brand {
+  background: #ffffff;
+  border: 1px solid #d7dce7;
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.08);
+}
+
+/* Brand title */
+body.light-theme .footer-brand h3,
+body.light-theme .footer-brand h2 {
+  color: #172033;
+}
+
+/* Brand description */
+body.light-theme .footer-brand p {
+  color: #64748b;
+}
+
+/* Footer headings */
+body.light-theme .footer-col h4 {
+  color: #172033;
+}
+
+/* Footer links */
+body.light-theme .footer-col a {
+  color: #64748b;
+}
+
+body.light-theme .footer-col a:hover {
+  color: #c58b12;
+}
+
+/* Bottom copyright */
+body.light-theme .footer-bottom {
+  color: #64748b;
+  border-color: #d7dce7;
+}
+
+body.light-theme .footer-bottom p {
+  color: #64748b;
+}
+
+/* =========================================
+   CATEGORIES - LIGHT MODE CONTROLS
+========================================= */
+
+/* Selected category */
+body.light-theme .selected-category,
+body.light-theme .selected-category button {
+  background: #ffffff;
+  color: #172033;
+  border-color: #d7dce7;
+}
+
+body.light-theme .selected-category * {
+  color: #172033;
+}
+
+/* All category/difficulty/question buttons */
+body.light-theme .category-btn,
+body.light-theme .difficulty-btn,
+body.light-theme .question-btn,
+body.light-theme .time-btn {
+  color: #172033;
+}
+
+/* Dark/unselected buttons */
+body.light-theme .difficulty-btn:not(.active),
+body.light-theme .difficulty-btn:not(.selected),
+body.light-theme .question-btn:not(.active),
+body.light-theme .question-btn:not(.selected),
+body.light-theme .time-btn {
+  background: #ffffff;
+  color: #172033;
+  border: 1px solid #d7dce7;
+}
+
+/* Selected buttons */
+body.light-theme .difficulty-btn.active,
+body.light-theme .difficulty-btn.selected,
+body.light-theme .question-btn.active,
+body.light-theme .question-btn.selected {
+  background: #ffc857;
+  color: #172033;
+  border-color: #ffc857;
+}
+
+/* Time display */
+body.light-theme #time-display,
+body.light-theme #time,
+body.light-theme .time-display {
+  color: #172033;
+}
+
+/* Plus / minus buttons */
+body.light-theme button[id*="increase"],
+body.light-theme button[id*="decrease"],
+body.light-theme button[id*="plus"],
+body.light-theme button[id*="minus"] {
+  background: #ffffff;
+  color: #172033;
+  border-color: #d7dce7;
+}
+
+/* Start quiz */
+body.light-theme #startQuiz,
+body.light-theme .start-quiz {
+  color: #172033;
+}
+
+body.light-theme label[for="medium"],
+body.light-theme label[for="hard"],
+body.light-theme label[for="easy"] {
+  color: #172033;
+  background: #ffffff;
+  border-color: #d7dce7;
+}
+
+/* Categories - Light Theme */
+
+body.light-theme label[for="medium"],
+body.light-theme label[for="hard"],
+body.light-theme label[for="easy"] {
+  color: #172033;
+  background: #ffffff;
+  border-color: #d7dce7;
+}
+
+body.light-theme input[type="radio"]:checked + label {
+  background: #ffc857;
+  color: #172033;
+  border-color: #ffc857;
+}
+
+body.light-theme #time-value {
+  color: #172033;
+}
+
+body.light-theme #decrease-time,
+body.light-theme #increase-time {
+  background: #ffffff;
+  color: #172033;
+  border-color: #d7dce7;
+}
+/* Number of Questions - Light Theme */
+
+body.light-theme label[for="q10"],
+body.light-theme label[for="q15"],
+body.light-theme label[for="q20"] {
+  background: #ffffff;
+  color: #172033;
+  border-color: #d7dce7;
+}
+
+body.light-theme input[name="questions"]:checked + label {
+  background: #ffc857;
+  color: #172033;
+  border-color: #ffc857;
+}

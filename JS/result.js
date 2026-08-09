@@ -124,3 +124,19 @@ if (accuracy >= 90) {
   message.textContent = "💪 Don't give up. Try again!";
   document.querySelector(".score-circle h2").style.color = "#ffc857";
 }
+
+const username = localStorage.getItem("username") || "Player";
+
+const leaderboardEntry = {
+  name: username,
+  category: settings.category,
+  score: score,
+  date: new Date().toISOString,
+};
+
+const existingScores =
+  JSON.parse(localStorage.getItem("mindarena_scores")) || [];
+
+existingScores.push(leaderboardEntry);
+
+localStorage.setItem("mindarena_scores", JSON.stringify(existingScores));

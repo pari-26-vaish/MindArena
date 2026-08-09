@@ -908,6 +908,20 @@ a:hover {
   padding-top: 24px;
   font-size: 0.85rem;
 }
+/* =========================
+   LIGHT THEME
+========================= */
+
+body.light-theme {
+  --bg-color: #f5f7fb;
+  --text-color: #111827;
+  --border-color: #d1d5db;
+}
+
+body.light-theme {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
 
 @media (max-width: 900px) {
   .footer-grid {
