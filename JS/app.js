@@ -48,3 +48,15 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "☀️";
   }
 });
+
+const startNowBtn = document.getElementById("start-now-btn");
+
+if (startNowBtn) {
+  const isLoggedIn = localStorage.getItem("loggedIn") === "true";
+
+  if (isLoggedIn) {
+    startNowBtn.href = "pages/dashboard.html";
+  } else {
+    startNowBtn.href = "pages/login.html";
+  }
+}

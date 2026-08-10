@@ -67,7 +67,31 @@ a {
 a:hover {
   transform: translateY(-5px);
 }
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
+.logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.logo-mind {
+  color: #ffffff;
+}
+
+.logo-arena {
+  color: #ffc857;
+}
 #theme-btn {
   background-color: transparent;
   font-size: 18px;
@@ -214,4 +238,104 @@ a:hover {
   text-align: center;
   color: #9aa39a;
   padding: 40px;
+}
+
+/* =========================================
+   RESPONSIVE V1 — LEADERBOARD
+========================================= */
+
+@media (max-width: 760px) {
+  body {
+    padding: 12px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .leaderboard-page {
+    width: 100%;
+    padding: 45px 0;
+  }
+
+  .lb-header h1 {
+    font-size: 2rem;
+  }
+
+  .lb-controls {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .lb-controls select,
+  .lb-controls button {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .podium {
+    gap: 8px;
+    align-items: flex-end;
+  }
+
+  .podium-item {
+    min-width: 0;
+    width: 31%;
+    padding: 12px 8px;
+  }
+
+  .podium-item.gold {
+    height: 140px;
+  }
+
+  .podium-item.silver {
+    height: 115px;
+  }
+
+  .podium-item.bronze {
+    height: 100px;
+  }
+
+  .podium-item .p-name {
+    overflow-wrap: anywhere;
+    font-size: 0.85rem;
+  }
+
+  .lb-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .lb-table th,
+  .lb-table td {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderboard-page {
+    padding: 30px 0;
+  }
+
+  .lb-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .podium-item .rank-medal {
+    font-size: 1.4rem;
+  }
+
+  .podium-item .p-score {
+    font-size: 0.8rem;
+  }
 }

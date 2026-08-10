@@ -272,9 +272,8 @@ body.light-theme .stat span {
 body.light-theme .stat strong {
   color: #172033;
 }
-
 /* =========================================
-   LEADERBOARD
+   LEADERBOARD — LIGHT THEME
 ========================================= */
 
 body.light-theme .leaderboard-page {
@@ -289,259 +288,82 @@ body.light-theme .lb-header p {
   color: #64748b;
 }
 
+/* Controls */
+
 body.light-theme .lb-controls select {
   background: #ffffff;
   color: #172033;
-  border-color: #cbd3e1;
+  border: 1px solid #cbd3e1;
 }
+
+body.light-theme .lb-controls select:hover {
+  border-color: #ffc857;
+}
+
+body.light-theme #clearScores {
+  background: #ffffff;
+  color: #b77900;
+  border: 1px solid #ffc857;
+}
+
+body.light-theme #clearScores:hover {
+  background: #fff8e7;
+}
+
+/* Table */
 
 body.light-theme .lb-table {
   background: #ffffff;
-  border-color: #d7dce7;
+  border: 1px solid #d7dce7;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.06);
+}
+
+/* Table header */
+
+body.light-theme .lb-table thead {
+  background: #e5e9f1;
 }
 
 body.light-theme .lb-table th {
-  background: #eef1f7;
+  background: #e5e9f1;
   color: #475569;
+  border-bottom: 1px solid #d7dce7;
 }
+
+/* Table rows */
 
 body.light-theme .lb-table td {
+  background: #ffffff;
   color: #172033;
-  border-color: #e2e6ee;
+  border-bottom: 1px solid #e5e9f1;
 }
 
-body.light-theme .lb-table tr:hover {
+body.light-theme .lb-table tbody tr:hover td {
   background: #f8f9fc;
 }
 
+/* Top rows */
+
+body.light-theme .lb-table .top-row td {
+  background: #fffaf0;
+}
+
+/* Podium */
+
 body.light-theme .podium-item {
   background: #ffffff;
-  border-color: #d7dce7;
-}
-
-body.light-theme .empty-state {
-  color: #64748b;
-}
-
-/* =========================================
-   CTA
-========================================= */
-
-body.light-theme .cta-section {
-  background: linear-gradient(135deg, #ffffff, #fff8e8);
-  border-color: #e3e7ef;
-}
-
-body.light-theme .cta-content h2 {
   color: #172033;
-}
-
-body.light-theme .cta-content p {
-  color: #64748b;
-}
-
-/* =========================================
-   FOOTER
-========================================= */
-
-body.light-theme .site-footer {
-  background: #e8ecf3;
-  border-color: #d7dce7;
-}
-
-body.light-theme .footer-col h4 {
-  color: #172033;
-}
-
-body.light-theme .footer-col a {
-  color: #64748b;
-}
-
-body.light-theme .footer-col a:hover {
-  color: #c58b12;
-}
-
-/* =========================================
-   THEME BUTTON
-========================================= */
-
-body.light-theme #theme-btn {
-  background: transparent;
-  color: #172033;
-}
-
-/* =========================================
-   HOMEPAGE - LIGHT MODE FIX
-========================================= */
-
-/* Hero */
-
-body.light-theme .hero-title {
-  color: #172033;
-}
-
-body.light-theme .hero-title .highlight {
-  color: #e5a91a;
-}
-
-body.light-theme .hero-subtitle {
-  color: #64748b;
-}
-
-body.light-theme .hero-badge {
-  background: #fff7df;
-  color: #b77900;
-  border-color: #f2d48a;
-}
-
-body.light-theme .hero-stats .stat h3 {
-  color: #e5a91a;
-}
-
-body.light-theme .hero-stats .stat p {
-  color: #64748b;
-}
-
-/* Categories section */
-
-body.light-theme .categories {
-  color: #172033;
-}
-
-body.light-theme .categories-head {
-  color: #172033;
-}
-
-body.light-theme .categories-sub {
-  color: #64748b;
-}
-
-/* Category cards */
-
-body.light-theme .category-card-p,
-body.light-theme .category-card-s,
-body.light-theme .category-card-g,
-body.light-theme .category-card-h,
-body.light-theme .category-card-sp,
-body.light-theme .category-card-m {
-  background: #ffffff;
   border: 1px solid #d7dce7;
   box-shadow: 0 8px 20px rgba(30, 41, 59, 0.06);
 }
 
-/* Category card text */
+/* Empty state */
 
-body.light-theme .category-card h3 {
-  color: #172033;
-}
-
-body.light-theme .category-card p {
-  color: #475569;
-}
-
-body.light-theme .category-card span {
+body.light-theme .empty-state {
   color: #64748b;
 }
-
-body.light-theme .category-card a {
-  color: #172033;
-}
-
-/* Category hover */
-
-body.light-theme .category-card-p:hover {
-  border-color: #3b82f6;
-}
-
-body.light-theme .category-card-s:hover {
-  border-color: #22c55e;
-}
-
-body.light-theme .category-card-g:hover {
-  border-color: #06b6d4;
-}
-
-body.light-theme .category-card-h:hover {
-  border-color: #f59e0b;
-}
-
-body.light-theme .category-card-sp:hover {
-  border-color: #ef4444;
-}
-
-body.light-theme .category-card-m:hover {
-  border-color: #a855f7;
-}
-
-/* =========================================
-   FEATURES SECTION
-========================================= */
-
-body.light-theme .feature {
-  color: #172033;
-}
-
-body.light-theme .feature-head {
-  color: #172033;
-}
-
-body.light-theme .feature-sub {
-  color: #64748b;
-}
-
-body.light-theme .feature-content h3 {
-  color: #172033;
-}
-
-body.light-theme .feature-content p {
-  color: #64748b;
-}
-
-body.light-theme .feature-btn {
-  color: #c58b12;
-}
-
-/* Demo cards */
-
-body.light-theme .demo-card {
-  background: #ffffff;
-  border-color: #d7dce7;
-  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.06);
-}
-
-body.light-theme .demo-card h2,
-body.light-theme .demo-card h3,
-body.light-theme .demo-card h4 {
-  color: #172033;
-}
-
-body.light-theme .demo-card p {
-  color: #64748b;
-}
-
-body.light-theme .progress {
-  background: #e1e5ec;
-}
-
-/* =========================================
-   CTA
-========================================= */
-
-body.light-theme .cta-section {
-  background: linear-gradient(120deg, #ffffff, #fff7df, #ffffff);
-
-  border-color: #d7dce7;
-}
-
-body.light-theme .cta-content h2 {
-  color: #172033;
-  text-shadow: none;
-}
-
-body.light-theme .cta-content p {
-  color: #64748b;
-}
-
 /* =========================================
    FOOTER - LIGHT MODE FIX
 ========================================= */
@@ -709,4 +531,13 @@ body.light-theme input[name="questions"]:checked + label {
   background: #ffc857;
   color: #172033;
   border-color: #ffc857;
+}
+/* Logo - Light Theme */
+
+body.light-theme .logo-mind {
+  color: #172033;
+}
+
+body.light-theme .logo-arena {
+  color: #f2b632;
 }

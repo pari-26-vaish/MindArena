@@ -1,0 +1,416 @@
+/* =========================================
+   MINDARENA LOGIN PAGE
+========================================= */
+
+:root {
+  --bg-color: #0d1117;
+  --card-color: #161b22;
+  --text-color: #e6edf3;
+  --muted-color: #9ca3af;
+  --border-color: #263041;
+
+  --primary-color: #ffc857;
+  --accent-color: #a78bfa;
+
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --danger-color: #f87171;
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: "Lexend", sans-serif;
+}
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+/* =========================================
+   LOGIN CONTAINER
+========================================= */
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 40px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(96, 165, 250, 0.08),
+      transparent 45%
+    ),
+    var(--card-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 25px rgba(251, 191, 36, 0.25),
+    0 20px 50px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+#m-logo {
+  width: 65px;
+  height: 65px;
+
+  object-fit: contain;
+}
+
+.mindarena-text {
+  margin-left: 10px;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mind {
+  color: #ffffff;
+}
+
+.arena {
+  color: #ffc857;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.login-header {
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  margin-bottom: 10px;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: var(--text-color);
+}
+
+.login-header p {
+  color: var(--muted-color);
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  text-align: left;
+}
+
+/* =========================================
+   INPUT FIELD
+========================================= */
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.login-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  color: var(--text-color);
+}
+
+.login-field input {
+  width: 100%;
+
+  padding: 14px 15px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+
+  color: var(--text-color);
+  background: #0d1117;
+
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-field input::placeholder {
+  color: #6b7280;
+}
+
+.login-field input:focus {
+  border-color: var(--primary-color);
+
+  box-shadow: 0 0 0 3px rgba(255, 200, 87, 0.12);
+}
+
+/* =========================================
+   LOGIN ERROR
+========================================= */
+
+#login-error {
+  min-height: 20px;
+
+  color: var(--danger-color);
+
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+  width: 100%;
+
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--primary-color);
+  color: #172033;
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #f4b83f;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(255, 200, 87, 0.2);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+/* =========================================
+   SIGNUP
+========================================= */
+
+.signup-text {
+  margin-top: 25px;
+
+  color: var(--muted-color);
+
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: var(--primary-color);
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   BACK HOME
+========================================= */
+
+.back-home {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: var(--muted-color);
+
+  font-size: 0.85rem;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.back-home:hover {
+  color: var(--primary-color);
+}
+
+/* =========================================
+   LIGHT THEME
+========================================= */
+
+body.light-theme {
+  background: #eef1f7;
+  color: #172033;
+}
+
+body.light-theme .login-container {
+  background: #f8f9fc;
+
+  border-color: #d7dce7;
+
+  box-shadow: 0 10px 30px rgba(30, 41, 59, 0.08);
+}
+
+body.light-theme .login-header h1 {
+  color: #172033;
+}
+
+body.light-theme .login-header p {
+  color: #64748b;
+}
+
+body.light-theme .login-field label {
+  color: #172033;
+}
+
+body.light-theme .login-field input {
+  background: #ffffff;
+
+  color: #172033;
+
+  border-color: #d7dce7;
+}
+
+body.light-theme .login-field input::placeholder {
+  color: #94a3b8;
+}
+
+body.light-theme .login-field input:focus {
+  border-color: #ffc857;
+}
+
+body.light-theme .mind {
+  color: #172033;
+}
+
+body.light-theme .arena {
+  color: #e5a91a;
+}
+
+body.light-theme .signup-text {
+  color: #64748b;
+}
+
+body.light-theme .back-home {
+  color: #64748b;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 500px) {
+  .login-page {
+    padding: 20px;
+  }
+
+  .login-container {
+    padding: 30px 25px;
+  }
+
+  .mindarena-text {
+    font-size: 1.7rem;
+  }
+
+  #m-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .login-header h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================================
+   RESPONSIVE V1 — LOGIN
+========================================= */
+
+@media (max-width: 480px) {
+  .login-page {
+    min-height: 100svh;
+    padding: 15px;
+  }
+
+  .login-container {
+    max-width: 100%;
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .login-header h1 {
+    font-size: 1.55rem;
+  }
+
+  .login-header p {
+    font-size: 0.85rem;
+  }
+
+  .login-field input {
+    padding: 12px;
+  }
+}

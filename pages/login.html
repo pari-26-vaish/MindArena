@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MindArena — Login</title>
+
+    <!-- Existing styles -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/theme.css" />
+
+    <!-- Login styles -->
+    <link rel="stylesheet" href="../CSS/login.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Existing app JS -->
+    <script src="../JS/app.js" defer></script>
+
+    <!-- Login JS -->
+    <script src="../JS/login.js" defer></script>
+  </head>
+
+  <body>
+    <main class="login-page">
+      <div class="login-container">
+        <!-- Logo -->
+        <div class="logo-container reveal">
+          <img
+            id="m-logo"
+            src="../assets/icons/logo-icon.png"
+            alt="MindArena"
+          />
+
+          <div class="mindarena-text">
+            <span class="mind">Mind</span><span class="arena">Arena</span>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="login-header reveal delay-1">
+          <h1>Welcome Back!</h1>
+          <p>Login to continue your MindArena journey.</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form">
+          <div class="login-field reveal delay-1">
+            <label for="username">Username</label>
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div class="login-field reveal delay-1">
+            <label for="password">Password</label>
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div id="login-error"></div>
+
+          <button type="submit" class="login-btn reveal delay-2">
+            Login →
+          </button>
+        </form>
+
+        <!-- Signup -->
+        <p class="signup-text reveal delay-2">
+          Don't have an account?
+          <a href="../pages/signup.html" id="signup-link">Sign up</a>
+        </p>
+
+        <!-- Back -->
+        <a href="../index.html" class="back-home"> ← Back to Home </a>
+      </div>
+    </main>
+  </body>
+</html>

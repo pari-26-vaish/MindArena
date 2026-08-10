@@ -1,23 +1,8 @@
-// ==============================
-// Reveal Animation
-// ==============================
+const isLoggedIn = localStorage.getItem("loggedIn") === "true";
 
-const reveals = document.querySelectorAll(".reveal");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  },
-);
-
-reveals.forEach((el) => observer.observe(el));
+if (!isLoggedIn) {
+  window.location.href = "login.html";
+}
 
 // ==============================
 // Fetch Data
@@ -87,4 +72,17 @@ const total = Number(bestScore.split("/")[1]);
 
 if (best === total && total > 0) {
   document.getElementById("perfect-score").classList.add("unlocked");
+}
+/* =========================================
+   LOGOUT
+========================================= */
+
+const logoutBtn = document.getElementById("logout-btn");
+
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", function () {
+    localStorage.removeItem("loggedIn");
+
+    window.location.href = "../pages/login.html";
+  });
 }

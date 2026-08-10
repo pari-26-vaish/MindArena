@@ -66,7 +66,31 @@ a {
 a:hover {
   transform: translateY(-5px);
 }
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
+.logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.logo-mind {
+  color: #ffffff;
+}
+
+.logo-arena {
+  color: #ffc857;
+}
 #theme-btn {
   background-color: transparent;
   font-size: 18px;
@@ -225,4 +249,87 @@ a:hover {
 .primary-btn:hover,
 .secondary-btn:hover {
   transform: translateY(-4px);
+}
+
+/* =========================================
+   RESPONSIVE V1 — RESULT
+========================================= */
+
+@media (max-width: 760px) {
+  body {
+    padding: 12px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .result-section {
+    min-height: calc(100vh - 24px);
+    padding: 25px 0;
+  }
+
+  .result-card {
+    width: 100%;
+    max-width: 620px;
+    padding: 25px 18px;
+  }
+
+  .score-circle h2 {
+    font-size: clamp(3rem, 12vw, 4rem);
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .stat {
+    min-width: calc(50% - 6px);
+  }
+
+  .result-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .result-buttons a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-card {
+    padding: 22px 15px;
+  }
+
+  .result-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .result-header p {
+    margin-bottom: 25px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stat {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .stat strong {
+    font-size: 1.7rem;
+  }
 }
