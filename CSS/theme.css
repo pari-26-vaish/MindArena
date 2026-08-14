@@ -21,12 +21,22 @@ body.light-theme span,
 body.light-theme label {
   color: #172033;
 }
+body.light-theme .cta-content h2 {
+  color: white;
+}
+
+body.light-theme .cta-content p {
+  color: white;
+}
 
 body.light-theme .muted,
 body.light-theme small {
   color: #64748b;
 }
 
+body.light-theme .leaderboard-preview li {
+  color: #172033;
+}
 /* =========================================
    NAVBAR
 ========================================= */
@@ -540,4 +550,25 @@ body.light-theme .logo-mind {
 
 body.light-theme .logo-arena {
   color: #f2b632;
+}
+body.light-theme .category-card a {
+  background: #ffc857;
+  color: #172033;
+  border: none;
+}
+
+body.light-theme .category-card a:hover {
+  background: #f4b83f;
+  color: #172033;
+}
+/* Category buttons - Light Theme */
+
+body.light-theme .category-card .category-footer a {
+  background: #ffc857;
+  color: #172033;
+}
+
+body.light-theme .category-card .category-footer a:hover {
+  background: #f4b83f;
+  color: #172033;
 }

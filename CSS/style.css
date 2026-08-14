@@ -245,9 +245,7 @@ a:hover {
   gap: 30px;
 }
 .category-card h3,
-.category-card p,
-.category-card span,
-.category-card a {
+.category-card p {
   color: white;
 }
 .category-card p {
@@ -333,24 +331,49 @@ a:hover {
 }
 
 .category-card a {
-  transition: 0.3s;
-}
-.category-card a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+
+  padding: 12px 20px;
+  border-radius: 10px;
+
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
+
+  background: #ffc857;
+  color: #172033;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
 }
-.category-card-p:hover a {
-  letter-spacing: 1px;
+
+.category-card a:hover {
+  background: #f4b83f;
+  color: #172033;
+  transform: translateY(-2px);
 }
 .category-card span {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
   color: #9ca3af;
+}
+
+.category-footer > span {
+  display: block;
+  margin-bottom: 15px;
+  color: #9ca3af;
+}
+
+.category-card .arrow {
+  display: inline;
+  margin: 0;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .arrow {
+  transform: translateX(5px);
 }
 .arrow {
   transition: 0.3s;
@@ -369,13 +392,6 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.category-footer a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: white;
-}
 .arrow {
   transition: 0.3s;
 }
@@ -1137,4 +1153,44 @@ body.light-theme {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+}
+
+/* =========================================
+   CATEGORY CARD LINKS — FINAL FIX
+========================================= */
+
+.category-card .category-footer {
+  display: block;
+}
+
+.category-card .category-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  background: #ffc857;
+  color: #172033;
+
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.category-card .category-footer a:hover {
+  background: #f4b83f;
+  color: #172033;
+}
+
+.category-card .category-footer .arrow {
+  display: inline;
+  margin: 0;
+  color: inherit;
 }
