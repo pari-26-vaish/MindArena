@@ -1,3 +1,6 @@
+const dns = require("dns");
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -21,12 +24,12 @@ app.use("/api/auth", authRoutes);
 
 // Test route
 app.get("/", (req, res) => {
-    res.send("MindArena Backend is running 🚀");
+  res.send("MindArena Backend is running 🚀");
 });
 
 // Start server
 const PORT = 5000;
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
